@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <TextView
+        android:text="Emy cards"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cardEmy1"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/cardEmy2"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/cardEmy3"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/cardEmy4"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/cardEmy5"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="You cards"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/card5"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBet"
+        android:text="bet"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

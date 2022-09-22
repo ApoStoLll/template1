@@ -43,9 +43,11 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
         ctxx = this;
         String old = getSharedPreferences(Config.sharedName, MODE_PRIVATE).getString(Config.sharedStr, null);
         if(old == null){
+            Log.e("here", "h");
             initFb(this);
             initAps();
         } else {
+            Log.e("here", "h2");
             earg(this, old);
         }
 
@@ -201,7 +203,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
             @Override
             public void run() {
                 Intent in = new Intent(ctx, WActivity.class);
-                in.putExtra("a", u);
+                in.putExtra(Config.sharedStr, u);
                 getSharedPreferences(Config.sharedName, MODE_PRIVATE).edit().putString(Config.sharedStr, u).apply();
                 startActivity(in);
                 finish();

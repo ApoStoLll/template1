@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 apply plugin: 'kotlin-android'
+apply plugin: "ru.cleverpumpkin.proguard-dictionaries-generator"
+
 
 android {
     compileSdk 32
@@ -19,7 +21,13 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -32,6 +40,16 @@ android {
     }
     buildFeatures {
         viewBinding true
+    }
+    proguardDictionaries {
+        dictionaryNames = [
+                "build/class",
+                "build/package",
+                "build/obfuscation"
+        ]
+        minLineLength 50  // Default value: 10
+        maxLineLength 70  // Default value: 30
+        linesCountInDictionary 90000  // Default value: 30000
     }
 }
 

@@ -2,27 +2,27 @@ package frog.company.app13june;
 
 public class Config {
 
-    static String sharedName = "rege";
-    static String sharedStr = "gerge";
+    static String sharedName = "ytser";
+    static String sharedStr = "tyhrg";
 
-    static String fcid = "315475137463517";
+    static String fcid = "2775879785888489";
 
-    static String apid = "3CQTszcgiyKxDUbmgDxMT";
+    static String apid = "GRZBf3YtupEMyfX7Sedsi6";
 
-    static String url = "http://luckyfruitwheel.lol/wheel_reg.php?";
+    static String url = "http://goldenscarabsecretsonline.xyz/scarab_reg.php?";
 
-    static String one = "e9e2ceb5-2994-42ef-8b16-614bef05025d";
+    static String one = "e08f5a28-c063-48e9-a039-03022d934559";
 
 
-    static String fb_deeplink = "imAx1rf2ua";
-    static String campaign = "nSDScqfdfK";
-    static String media_source = "u9oS8SPUOy";
-    static String af_channel = "yAw2j7c4PY";
+    static String fb_deeplink = "8svPWicrpK";
+    static String campaign = "RtOD5Ex9c9";
+    static String media_source = "FQhpN1Dr6N";
+    static String af_channel = "rrWioPztRb";
 
-    static String offerLink = "CaInsjH6C0";
+    static String offerLink = "fs80C3aiDk";
 
-    static String adb = "XwVeQMRKXk";
-    static String tmz = "smrHNjSB15";
-    static String af_userid = "rGBOwwRMSy";
-    static String adid = "ve5yenAfUj";
+    static String adb = "QssN9NLqLY";
+    static String tmz = "7Oyq54Kk8a";
+    static String af_userid = "u8YA7tS5f2";
+    static String adid = "UpJJ4O9et6";
 }

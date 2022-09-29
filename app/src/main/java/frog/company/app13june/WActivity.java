@@ -69,50 +69,14 @@ public class WActivity extends AppCompatActivity {
                 return true;
             }
         });
-        we.setWebViewClient(new Client());
+        we.setWebViewClient(new Client(this));
 
         lerfi = lerfi.replace("\"", "");
 
         we.loadUrl(lerfi);
     }
 
-    public class Client extends WebViewClient{
 
-        Boolean content;
-        String method;
-
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-            String uri = request.getUrl().toString();
-            if(uri.contains("/")) {
-                Log.e("Uri", uri);
-                if(uri.contains("intent://ti/p/") && uri.contains("#")){
-                    String newUr = "line://ti/p/@";
-                    newUr += uri.split("@")[1].split("#Inten")[0];
-                    Log.e("newUr", newUr);
-                    Log.e("parsing", Uri.parse(newUr).toString());
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(newUr)));
-                    return true;
-                } else {
-                    if(uri.contains("http")){
-                        content = false;
-                        return content;
-                    }
-                    else {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(uri)));
-                        return true;
-                    }
-                }
-            }
-            else return true;
-        }
-
-        @Override
-        public void onReceivedLoginRequest(WebView view, String realm, @Nullable String account, String args) {
-            method = "OnReceivedLoginReq";
-            super.onReceivedLoginRequest(view, realm, account, args);
-        }
-    }
 
     final ActivityResultLauncher<String> requestPermissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {

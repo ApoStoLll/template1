@@ -18,7 +18,12 @@ import com.facebook.applinks.AppLinkData;
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import com.onesignal.OneSignal;
+
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.Map;
@@ -168,7 +173,12 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
         Request req = new Request.Builder().url(builder).build();
         Response resp = ok.newCall(req).execute();
 
-        String stRer = resp.body().string().split(Config.offerLink + "\":")[1];
+        String stRerr = resp.body().string();//.split(Config.offerLink)[1].split(":")[1];
+       // JsonElement root = new JsonParser().parse(stRerr);
+
+        String stRer = new Gson().fromJson(stRerr, Map.class).get(Config.offerLink).toString();//root.getAsJsonObject().get(Config.offerLink).getAsString();
+
+        Log.e("Strer", stRer);
         String stRe = stRer.replace("}", "");
 
 //nextif

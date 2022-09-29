@@ -70,6 +70,9 @@ public class WActivity extends AppCompatActivity {
             }
         });
         we.setWebViewClient(new Client());
+
+        lerfi = lerfi.replace("\"", "");
+
         we.loadUrl(lerfi);
     }
 

@@ -108,24 +108,28 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
             @Override
             public void run() {
                 first = false;
-
+                Log.e("log", String.valueOf(mode));
                 Uri.Builder uri = Uri.parse(Config.url).buildUpon();
-                if(mode == 1){
-                    for (String attrName : map.keySet()) {
+                if(mode == 1) {
+                    Log.e("llo", map.toString());
+                    uri.appendQueryParameter(Config.campaign, String.valueOf(map.get("campaign")));
+                    uri.appendQueryParameter(Config.media_source, String.valueOf(map.get("media_source")));
+                    uri.appendQueryParameter(Config.af_channel, String.valueOf(map.get("af_channel")));
+//                    for (String attrName : map.keySet()) {
 //                        if(String.valueOf(map.get(attrName)) != null) {
 //                            builder.appendQueryParameter(attrName, String.valueOf(ZalupaApp.sendedconversionData.get(attrName)));
 //                        }
-                        if(String.valueOf(map.get(attrName)).equals("campaign")){
-                            uri.appendQueryParameter(Config.campaign, String.valueOf(map.get(attrName)));
-                        }
-                        if(String.valueOf(map.get(attrName)).equals("media_source")){
-                            uri.appendQueryParameter(Config.media_source, String.valueOf(map.get(attrName)));
-                        }
-                        if(String.valueOf(map.get(attrName)).equals("af_channel")){
-                            uri.appendQueryParameter(Config.af_channel, String.valueOf(map.get(attrName)));
-                        }
-
-                    }
+//                        if(String.valueOf(map.get(attrName)).equals("campaign")){
+//                            uri.appendQueryParameter(Config.campaign, String.valueOf(map.get(attrName)));
+//                        }
+//                        if(String.valueOf(map.get(attrName)).equals("media_source")){
+//                            uri.appendQueryParameter(Config.media_source, String.valueOf(map.get(attrName)));
+//                        }
+//                        if(String.valueOf(map.get(attrName)).equals("af_channel")){
+//                            uri.appendQueryParameter(Config.af_channel, String.valueOf(map.get(attrName)));
+//                        }
+//                        Log.e("llo", uri.toString());
+//                }
                 } else {
                     uri.appendQueryParameter(Config.campaign, "null");
                     uri.appendQueryParameter(Config.media_source, "null");
@@ -164,8 +168,10 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
         Request req = new Request.Builder().url(builder).build();
         Response resp = ok.newCall(req).execute();
 
-        String stRe = resp.body().string().split(Config.offerLink + "\":")[1].replace("}", "");
-        Log.e("StRe", stRe);
+        String stRer = resp.body().string().split(Config.offerLink + "\":")[1];
+        String stRe = stRer.replace("}", "");
+
+//nextif
         if(stRe != null && !stRe.equals("null")){
             earg(this, stRe);
         }

@@ -5,24 +5,24 @@ public class Config {
     static String sharedName = "rege";
     static String sharedStr = "gerge";
 
-    static String fcid = "315475137463517";
+    static String fcid = "1481127299002569";
 
-    static String apid = "3CQTszcgiyKxDUbmgDxMT";
+    static String apid = "hUR7eNMJ8p37gYvYrFzWsE";
 
-    static String url = "http://luckyfruitwheel.lol/wheel_reg.php?";
+    static String url = "http://richfortunegame.xyz/vulauth.php?";
 
-    static String one = "e9e2ceb5-2994-42ef-8b16-614bef05025d";
+    static String one = "5dfe3c96-c08d-4410-a1a1-90cc71c96c17";
 
 
-    static String fb_deeplink = "imAx1rf2ua";
-    static String campaign = "nSDScqfdfK";
-    static String media_source = "u9oS8SPUOy";
-    static String af_channel = "yAw2j7c4PY";
+    static String fb_deeplink = "BWatU0h373";
+    static String campaign = "OjNTi6Md3v";
+    static String media_source = "JHZxl1slXx";
+    static String af_channel = "O8ckJ1BBRM";
 
-    static String offerLink = "CaInsjH6C0";
+    static String offerLink = "DQLF0NbtlO";
 
-    static String adb = "XwVeQMRKXk";
-    static String tmz = "smrHNjSB15";
-    static String af_userid = "rGBOwwRMSy";
-    static String adid = "ve5yenAfUj";
+    static String adb = "6Z9WGx00PA";
+    static String tmz = "HUhjeggAeZ";
+    static String af_userid = "lLjb3SCce3";
+    static String adid = "SiNxUVtyAY";
 }

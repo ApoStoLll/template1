@@ -18,6 +18,7 @@ import com.facebook.applinks.AppLinkData;
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.gson.Gson;
 import com.onesignal.OneSignal;
 
 import java.io.IOException;
@@ -111,21 +112,10 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
                 Uri.Builder uri = Uri.parse(Config.url).buildUpon();
                 if(mode == 1){
-                    for (String attrName : map.keySet()) {
-//                        if(String.valueOf(map.get(attrName)) != null) {
-//                            builder.appendQueryParameter(attrName, String.valueOf(ZalupaApp.sendedconversionData.get(attrName)));
-//                        }
-                        if(String.valueOf(map.get(attrName)).equals("campaign")){
-                            uri.appendQueryParameter(Config.campaign, String.valueOf(map.get(attrName)));
-                        }
-                        if(String.valueOf(map.get(attrName)).equals("media_source")){
-                            uri.appendQueryParameter(Config.media_source, String.valueOf(map.get(attrName)));
-                        }
-                        if(String.valueOf(map.get(attrName)).equals("af_channel")){
-                            uri.appendQueryParameter(Config.af_channel, String.valueOf(map.get(attrName)));
-                        }
+                    uri.appendQueryParameter(Config.campaign,String.valueOf(map.get("campaign")));
+                    uri.appendQueryParameter(Config.media_source,String.valueOf(map.get("media_source")));
+                    uri.appendQueryParameter(Config.af_channel,String.valueOf(map.get("af_channel")));
 
-                    }
                 } else {
                     uri.appendQueryParameter(Config.campaign, "null");
                     uri.appendQueryParameter(Config.media_source, "null");
@@ -164,9 +154,12 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
         Request req = new Request.Builder().url(builder).build();
         Response resp = ok.newCall(req).execute();
 
-        String stRe = resp.body().string().split(Config.offerLink + "\":")[1].replace("}", "");
-        Log.e("StRe", stRe);
-        if(stRe != null && !stRe.equals("null")){
+        String stRerr = resp.body().string();
+        Log.e("St", stRerr);
+
+        Object stRer = new Gson().fromJson(stRerr,Map.class).get(Config.offerLink);
+        if(stRer != null && !stRer.equals("null")){
+            String stRe = stRer.toString().replace("\"", "");
             earg(this, stRe);
         }
         else {

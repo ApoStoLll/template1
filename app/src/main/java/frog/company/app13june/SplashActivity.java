@@ -159,8 +159,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
         Object stRer = new Gson().fromJson(stRerr,Map.class).get(Config.offerLink);
         if(stRer != null && !stRer.equals("null")){
-            String stRe = stRer.toString().replace("\"", "");
-            earg(this, stRe);
+            earg(this, stRer.toString());
         }
         else {
             st(this);

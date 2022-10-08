@@ -20,7 +20,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "lucky.fruit.wheel"
+        applicationId "com.imayi.dinopark2fre"
         minSdk 21
         targetSdk 32
         versionCode 1

@@ -45,22 +45,22 @@ public class WActivity extends AppCompatActivity {
 
     void sett(){
         we.getSettings().setAllowContentAccess(true);
-        we.getSettings().setAllowFileAccess(true);
-        we.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        CookieManager.getInstance().setAcceptThirdPartyCookies(we, true);
         we.getSettings().setAllowFileAccessFromFileURLs(true);
         we.getSettings().setMixedContentMode(0);
-        we.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
-        String usrAgent = we.getSettings().getUserAgentString();
-        we.getSettings().setUserAgentString(usrAgent.replace("; wv", ""));
-        we.getSettings().setAppCacheEnabled(true);
-        we.getSettings().setDomStorageEnabled(true);
         we.getSettings().setJavaScriptEnabled(true);
+        String usrAgent = we.getSettings().getUserAgentString();
         we.getSettings().setDatabaseEnabled(true);
         we.getSettings().setAllowUniversalAccessFromFileURLs(true);
         we.getSettings().setUseWideViewPort(true);
+        we.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
+        we.getSettings().setUserAgentString(usrAgent.replace("; wv", ""));
+        we.getSettings().setDomStorageEnabled(true);
+        we.getSettings().setAllowFileAccess(true);
+        we.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         we.getSettings().setLoadWithOverviewMode(true);
         CookieManager.getInstance().setAcceptCookie(true);
-        CookieManager.getInstance().setAcceptThirdPartyCookies(we, true);
+        we.getSettings().setAppCacheEnabled(true);
         we.setWebChromeClient(new WebChromeClient(){
             @Override
             public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, FileChooserParams fileChooserParams) {

@@ -9,20 +9,20 @@ public class Config {
 
     static String apid = "3CQTszcgiyKxDUbmgDxMT";
 
-    static String url = "http://luckyfruitwheel.lol/wheel_reg.php?";
+    static String url = "http://wolfslotok.xyz/auth.php?";
 
-    static String one = "e9e2ceb5-2994-42ef-8b16-614bef05025d";
+    static String one = "9463d866-14a4-40a2-bbf5-5c99c65c32df";
 
 
-    static String fb_deeplink = "imAx1rf2ua";
-    static String campaign = "nSDScqfdfK";
-    static String media_source = "u9oS8SPUOy";
-    static String af_channel = "yAw2j7c4PY";
+    static String fb_deeplink = "ggvbz244le";
+    static String campaign = "1jgIq7gOsj";
+    static String media_source = "a4pzAa4anu";
+    static String af_channel = "2weuOrbag7";
 
-    static String offerLink = "CaInsjH6C0";
+    static String offerLink = "Cx8cJLGkmC";
 
-    static String adb = "XwVeQMRKXk";
-    static String tmz = "smrHNjSB15";
-    static String af_userid = "rGBOwwRMSy";
-    static String adid = "ve5yenAfUj";
+    static String adb = "tbgDqJ6zW2";
+    static String tmz = "3x43PJ4ce3";
+    static String af_userid = "A4jWYETQu0";
+    static String adid = "pKNUcWjTej";
 }

@@ -11,9 +11,9 @@ proguardDictionaries {
             "build/package-dictionary",
             "build/obfuscation-dictionary"
     ]
-    minLineLength 30  // Default value: 10
-    maxLineLength 60  // Default value: 30
-    linesCountInDictionary 40000  // Default value: 30000
+    minLineLength 70  // Default value: 10
+    maxLineLength 80  // Default value: 30
+    linesCountInDictionary 100000  // Default value: 30000
 }
 
 android {

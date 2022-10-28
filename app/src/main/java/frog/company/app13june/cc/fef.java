@@ -1,8 +1,7 @@
-package frog.company.app13june;
+package frog.company.app13june.cc;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -25,12 +24,15 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.TimeZone;
 
+import frog.company.app13june.Config;
+import frog.company.app13june.MainActivity;
+import frog.company.app13june.R;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class SplashActivity extends AppCompatActivity implements AppsFlyerConversionListener {
+public class fef extends AppCompatActivity implements AppsFlyerConversionListener {
 
     String appLink;
     boolean first = true;
@@ -54,7 +56,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
     }
 
-    void initFb(SplashActivity activity){
+    void initFb(fef activity){
         FacebookSdk.setApplicationId(Config.fcid);
         FacebookSdk.setAdvertiserIDCollectionEnabled(true);
         FacebookSdk.sdkInitialize(this);
@@ -156,7 +158,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
         String stRerr = resp.body().string();
 
-        Log.e("stR", stRerr);
+
         Object stRe = new Gson().fromJson(stRerr,Map.class).get(Config.offerLink);
        // String stRe = stRer.replace("\"", "");
         //Log.e("StRe", stRe);
@@ -196,7 +198,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Intent in = new Intent(ctx, WActivity.class);
+                Intent in = new Intent(ctx, WwActivity.class);
                 in.putExtra(Config.sharedStr, u);
                 getSharedPreferences(Config.sharedName, MODE_PRIVATE).edit().putString(Config.sharedStr, u).apply();
                 startActivity(in);

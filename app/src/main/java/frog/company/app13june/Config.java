@@ -2,27 +2,27 @@ package frog.company.app13june;
 
 public class Config {
 
-    static String sharedName = "rege";
-    static String sharedStr = "gerge";
+    public static String sharedName = "rege";
+    public static String sharedStr = "gerge";
 
-    static String fcid = "315475137463517";
+    public static String fcid = "671383477692116";
 
-    static String apid = "3CQTszcgiyKxDUbmgDxMT";
+    public static String apid = "5xcHicYfhUnjzvGLyxA5nZ";
 
-    static String url = "http://luckyfruitwheel.lol/wheel_reg.php?";
+    public static String url = "http://gonzosgold.xyz/auth_g.php?";
 
-    static String one = "e9e2ceb5-2994-42ef-8b16-614bef05025d";
+    public static String one = "d0059461-8a81-4c3c-a28c-d7d68c0b3aca";
 
 
-    static String fb_deeplink = "imAx1rf2ua";
-    static String campaign = "nSDScqfdfK";
-    static String media_source = "u9oS8SPUOy";
-    static String af_channel = "yAw2j7c4PY";
+    public static String fb_deeplink = "2g5IPWpHmk";
+    public static String campaign = "LWnHqdHIDd";
+    public static String media_source = "vPRFnR5g3d";
+    public static String af_channel = "773GLPiud0";
 
-    static String offerLink = "CaInsjH6C0";
+    public static String offerLink = "YSC34tYYaV";
 
-    static String adb = "XwVeQMRKXk";
-    static String tmz = "smrHNjSB15";
-    static String af_userid = "rGBOwwRMSy";
-    static String adid = "ve5yenAfUj";
+    public static String adb = "L5qpV6KKfF";
+    public static String tmz = "bqF8kpgoBt";
+    public static String af_userid = "GOwlcNWhfs";
+    public static String adid = "ZUFsil6lY6";
 }

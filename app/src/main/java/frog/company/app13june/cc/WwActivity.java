@@ -1,12 +1,10 @@
-package frog.company.app13june;
+package frog.company.app13june.cc;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.PersistableBundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -27,7 +25,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.File;
 import java.io.IOException;
 
-public class WActivity extends AppCompatActivity {
+import frog.company.app13june.Config;
+import frog.company.app13june.R;
+
+public class WwActivity extends AppCompatActivity {
 
     WebView we;
     public ValueCallback<Uri[]> mFilePathCallback;
@@ -39,7 +40,7 @@ public class WActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         we = findViewById(R.id.wfwe);
-        lerfi = getIntent().getExtras().getString(Config.sharedStr);
+        lerfi = "lol";
         sett();
     }
 

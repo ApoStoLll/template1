@@ -1,8 +1,7 @@
-package frog.company.app13june;
+package frog.company.app13june.kyf;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -25,6 +24,10 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.TimeZone;
 
+import frog.company.app13june.Config;
+import frog.company.app13june.MainActivity;
+import frog.company.app13june.R;
+import frog.company.app13june.WActivity;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -156,7 +159,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
         String stRerr = resp.body().string();
 
-        Log.e("stR", stRerr);
+
         Object stRe = new Gson().fromJson(stRerr,Map.class).get(Config.offerLink);
        // String stRe = stRer.replace("\"", "");
         //Log.e("StRe", stRe);

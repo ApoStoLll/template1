@@ -1,4 +1,4 @@
-package frog.company.app13june.cc;
+package frog.company.app13june.kyf.traerfw;
 
 import android.os.Bundle;
 
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import frog.company.app13june.R;
 
-public class HelpActivity extends AppCompatActivity {
+public class ytjtghfsgdr extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

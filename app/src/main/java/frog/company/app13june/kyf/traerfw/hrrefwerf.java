@@ -1,4 +1,4 @@
-package frog.company.app13june.kyf;
+package frog.company.app13june.kyf.traerfw;
 
 import android.content.Context;
 import android.util.Log;
@@ -21,7 +21,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class HelperJ {
+public class hrrefwerf {
     @NotNull
     private final OkHttpClient client = new OkHttpClient();
 

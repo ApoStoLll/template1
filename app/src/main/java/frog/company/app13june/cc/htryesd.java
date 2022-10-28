@@ -1,4 +1,4 @@
-package frog.company.app13june.kyf.traerfw;
+package frog.company.app13june.cc;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -7,7 +7,7 @@ import android.content.DialogInterface;
 
 import frog.company.app13june.IResultDialog;
 
-public class DialogsJ {
+public class htryesd {
 
     void dialogResult(Activity activity, String text , IResultDialog listener ){
         AlertDialog.Builder deleteDialog = new AlertDialog.Builder((Context)activity);

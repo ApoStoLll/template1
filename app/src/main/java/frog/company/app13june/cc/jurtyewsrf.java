@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 
 import frog.company.app13june.UtilsEnum;
 
-public class Utils {
+public class jurtyewsrf {
 
     public void onSetScore(Activity context, int score){
         SharedPreferences sPref;

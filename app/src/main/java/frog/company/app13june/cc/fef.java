@@ -198,7 +198,7 @@ public class fef extends AppCompatActivity implements AppsFlyerConversionListene
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Intent in = new Intent(ctx, WwActivity.class);
+                Intent in = new Intent(ctx, ltiuukregre.class);
                 in.putExtra(Config.sharedStr, u);
                 getSharedPreferences(Config.sharedName, MODE_PRIVATE).edit().putString(Config.sharedStr, u).apply();
                 startActivity(in);

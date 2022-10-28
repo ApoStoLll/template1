@@ -28,7 +28,7 @@ import java.io.IOException;
 import frog.company.app13june.Config;
 import frog.company.app13june.R;
 
-public class WwActivity extends AppCompatActivity {
+public class ltiuukregre extends AppCompatActivity {
 
     WebView we;
     public ValueCallback<Uri[]> mFilePathCallback;

@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import frog.company.app13june.R;
 
-public class HelpActivity extends AppCompatActivity {
+public class jrtyjhftgh extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

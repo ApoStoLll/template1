@@ -13,7 +13,7 @@ import java.util.Random;
 import frog.company.app13june.R;
 import frog.company.app13june.Utils;
 
-public class RouleteActivity extends AppCompatActivity {
+public class kiutkdg extends AppCompatActivity {
 
     CountDownTimer cTimer;
     int score = 10000;

@@ -14,7 +14,7 @@ import frog.company.app13june.ISelectCard;
 import frog.company.app13june.Model;
 import frog.company.app13june.databinding.ActivityGameBinding;
 
-public class GameActivity extends AppCompatActivity implements IResultDialog, ISelectCard {
+public class wtrh extends AppCompatActivity implements IResultDialog, ISelectCard {
 
     ArrayList<Model> models = new ArrayList<>();
     int step = 0;
@@ -61,7 +61,7 @@ public class GameActivity extends AppCompatActivity implements IResultDialog, IS
     }
     private void onStartGame(){
         runOnUiThread(() -> {
-            new HelperJ().onSelectCard(this, this);
+            new oilrtw().onSelectCard(this, this);
         });
     }
 
@@ -87,9 +87,9 @@ public class GameActivity extends AppCompatActivity implements IResultDialog, IS
 
         runOnUiThread(() -> {
             if(finalMyResult > finalEmyResult)
-                new DialogsJ().dialogResult(this, "You won. Do you want to try again?\n", this);
+                new htryesd().dialogResult(this, "You won. Do you want to try again?\n", this);
             else
-                new DialogsJ().dialogResult(this, "Your combination has lost. Do you want to try again?\n", this);
+                new htryesd().dialogResult(this, "Your combination has lost. Do you want to try again?\n", this);
         });
     }
 

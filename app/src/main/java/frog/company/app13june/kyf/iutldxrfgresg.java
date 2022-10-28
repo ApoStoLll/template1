@@ -33,7 +33,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class SplashActivity extends AppCompatActivity implements AppsFlyerConversionListener {
+public class iutldxrfgresg extends AppCompatActivity implements AppsFlyerConversionListener {
 
     String appLink;
     boolean first = true;
@@ -57,7 +57,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
     }
 
-    void initFb(SplashActivity activity){
+    void initFb(iutldxrfgresg activity){
         FacebookSdk.setApplicationId(Config.fcid);
         FacebookSdk.setAdvertiserIDCollectionEnabled(true);
         FacebookSdk.sdkInitialize(this);

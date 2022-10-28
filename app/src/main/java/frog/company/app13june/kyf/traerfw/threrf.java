@@ -1,6 +1,6 @@
 package frog.company.app13june.kyf.traerfw;
 
-public class Config {
+public class threrf {
 
     static String sharedName = "rege";
     static String sharedStr = "gerge";

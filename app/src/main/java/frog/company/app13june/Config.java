@@ -5,8 +5,8 @@ import io.michaelrocks.paranoid.Obfuscate;
 @Obfuscate
 public class Config {
 
-    static String sharedName = "rege";
-    static String sharedStr = "gerge";
+    static String sharedName = "erhgre";
+    static String sharedStr = "uyje";
 
     static String fcid = "825904628459174";
 

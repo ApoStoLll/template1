@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import io.michaelrocks.paranoid.Obfuscate;
+
+@Obfuscate
 public class HelpActivity extends AppCompatActivity {
 
     @Override

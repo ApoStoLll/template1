@@ -5,6 +5,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 
+import io.michaelrocks.paranoid.Obfuscate;
+
+@Obfuscate
 public class DialogsJ {
 
     void dialogResult(Activity activity, String text , IResultDialog listener ){

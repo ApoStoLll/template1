@@ -12,7 +12,9 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 import frog.company.app13june.databinding.ActivityGameBinding;
+import io.michaelrocks.paranoid.Obfuscate;
 
+@Obfuscate
 public class GameActivity extends AppCompatActivity implements IResultDialog, ISelectCard {
 
     ArrayList<Model> models = new ArrayList<>();

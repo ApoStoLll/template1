@@ -4,6 +4,8 @@ plugins {
     id 'ru.cleverpumpkin.proguard-dictionaries-generator'
 }
 apply plugin: 'kotlin-android'
+apply plugin: 'com.android.application'
+apply plugin: 'io.michaelrocks.paranoid'
 
 proguardDictionaries {
     dictionaryNames = [

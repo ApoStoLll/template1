@@ -1,28 +1,31 @@
 package frog.company.app13june;
 
+import io.michaelrocks.paranoid.Obfuscate;
+
+@Obfuscate
 public class Config {
 
     static String sharedName = "rege";
     static String sharedStr = "gerge";
 
-    static String fcid = "315475137463517";
+    static String fcid = "825904628459174";
 
-    static String apid = "3CQTszcgiyKxDUbmgDxMT";
+    static String apid = "5xcHicYfhUnjzvGLyxA5nZ";
 
-    static String url = "http://luckyfruitwheel.lol/wheel_reg.php?";
+    static String url = "http://cricketvictory.xyz/cricket_reg.php?";
 
-    static String one = "e9e2ceb5-2994-42ef-8b16-614bef05025d";
+    static String one = "962a0d15-1809-4138-8743-da2568460062";
 
 
-    static String fb_deeplink = "imAx1rf2ua";
-    static String campaign = "nSDScqfdfK";
-    static String media_source = "u9oS8SPUOy";
-    static String af_channel = "yAw2j7c4PY";
+    static String fb_deeplink = "SL8fay2tcG";
+    static String campaign = "ZTaxEeIkV4";
+    static String media_source = "F32ZSVmX4T";
+    static String af_channel = "EMZrM29nnj";
 
     static String offerLink = "CaInsjH6C0";
 
-    static String adb = "XwVeQMRKXk";
-    static String tmz = "smrHNjSB15";
-    static String af_userid = "rGBOwwRMSy";
-    static String adid = "ve5yenAfUj";
+    static String adb = "9Bu3xPD8q8";
+    static String tmz = "oXqu5xQzw6";
+    static String af_userid = "rVjNUeTlRy";
+    static String adid = "DsmXFLMP9F";
 }

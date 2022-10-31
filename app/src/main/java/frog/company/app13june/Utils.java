@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import io.michaelrocks.paranoid.Obfuscate;
+
+@Obfuscate
 public class Utils {
 
     public void onSetScore(Activity context, int score){

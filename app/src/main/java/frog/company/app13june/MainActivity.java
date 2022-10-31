@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import io.michaelrocks.paranoid.Obfuscate;
+
+@Obfuscate
 public class MainActivity extends AppCompatActivity {
 
     @Override

@@ -27,6 +27,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.File;
 import java.io.IOException;
 
+import io.michaelrocks.paranoid.Obfuscate;
+
+@Obfuscate
 public class WActivity extends AppCompatActivity {
 
     WebView we;

@@ -25,11 +25,13 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.TimeZone;
 
+import io.michaelrocks.paranoid.Obfuscate;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
+@Obfuscate
 public class SplashActivity extends AppCompatActivity implements AppsFlyerConversionListener {
 
     String appLink;

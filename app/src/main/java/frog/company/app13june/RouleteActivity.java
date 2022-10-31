@@ -12,6 +12,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Random;
 
+import io.michaelrocks.paranoid.Obfuscate;
+
+@Obfuscate
 public class RouleteActivity extends AppCompatActivity {
 
     CountDownTimer cTimer;

@@ -90,6 +90,7 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
     @Override
     public void onConversionDataFail(String s) {
+        Log.e("dataFail", s);
         if(!first) return;
         else log(null, -1);
     }
@@ -158,9 +159,10 @@ public class SplashActivity extends AppCompatActivity implements AppsFlyerConver
 
         String stRerr = resp.body().string();
 
-
+        Log.e("resp", stRerr);
         Object stRe = new Gson().fromJson(stRerr,Map.class).get(Config.offerLink);
        // String stRe = stRer.replace("\"", "");
+
         if(stRe != null && !stRe.toString().equals("null")){
             earg(this, stRe.toString());
         }

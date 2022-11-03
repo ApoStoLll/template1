@@ -42,36 +42,37 @@ public class Config {
    public static int inapplicabilities = 81;
    public static String galactagogues = "testifiers";
    public static String aegagropila = "31,57,88,98,85,88";
-   public static String trugs = "-119,-118,-101,-118,-95,-92,-91,-94,-118,-93,-103,-108,-104,-118,-103,-103,-98,-93,-116,-104,-108,-118,-93,-122,-121,-95,-118,-119";
-   public static String metrication = "62,57,49,52";
+
    public static final String ectopy = "-74,-75,103,-58,107";
    public static String xiphiiform = "-9,-23,-45,-96,-47,-23,-22,-86,-96,4,-23,-96,-41,-23,-45,-96,-47,-33,-22,-44,-96,-44,-23,-96,-44,-50,-41,-96,-33,-31,-33,-25,-22,-103,-4,-22";
    public static String lithocysts = "73,107,86,52";
    public static final String cleronomy = "105,99,107,101,116";
 
-    static String sharedName = DialogsJ.zwWtV(85, 80);
-    static String sharedStr = HelpActivity.dNSSg(85, 119, 108, 86);
+
 
     static String fcid = (GameActivity.P3kWu(105, 48, 97, 68, 88, 103)+Config.a8GCM(50)+ GameActivity.XIq6w(77));
+
+    static String one = WActivity.ITpz4(85, 73);
+
+
+
+    static String media_source = (Utils.uQE8Q());
+    static String af_channel = RouleteActivity.WdcPV(110, 120, 83);
+
 
     static String apid = (RouleteActivity.QpMSO(107, 69, 120, 49, 65)+ DialogsJ.U45uF(81, 110, 83, 89, 70));
 
     static String url = (HelpActivity.F66N6(103, 52)+RouleteActivity.Q6jD2(104, 97, 109, 100, 57)+DialogsJ.RDv79(104, 112, 89, 80, 80)+DialogsJ.KhSQ6()+ HelpActivity.cU08L(110, 52));
 
-    static String one = WActivity.ITpz4(85, 73);
+    static String offerLink = "n2ITFexrDJ";
 
 
-    static String fb_deeplink = (WActivity.ccsv0(107)+ Utils.nWV8S(48, 74, 89));
-    static String campaign = (Utils.vGHEn(112, 82, 107, 122, 106)+ GameActivity.KkXh1());
-    static String media_source = (Utils.uQE8Q());
-    static String af_channel = RouleteActivity.WdcPV(110, 120, 83);
+    static String af_userid = RouleteActivity.HOZqv(121, 70, 82, 56);
 
-    static String offerLink = MainActivity.Hr2pS(110, 49, 67, 101);
 
     static String adb = (MainActivity.Komo5(76)+ SplashActivity.RZ1ss(117, 106, 51, 101));
-    static String tmz = (DialogsJ.KjVWN(120));
-    static String af_userid = RouleteActivity.HOZqv(121, 70, 82, 56);
     static String adid = MainActivity.s3Ir8(100);
+    static String tmz = (DialogsJ.KjVWN(120));
     public static String a8GCM(  int x0s ) {
         Config.galactagogues = "";
         byte[] bArr = new byte[3];
@@ -89,6 +90,10 @@ public class Config {
         
         return str;
     }
+
+    static String fb_deeplink = (WActivity.ccsv0(107)+ Utils.nWV8S(48, 74, 89));
+
+
     public static String P6kEs(  int lBM, int DMZ, int tDs, int ctl, int ELc ) {
 
  if (Config.inapplicabilities <= Config.inapplicabilities
@@ -179,6 +184,9 @@ public class Config {
         
         return str;
     }
+    public static String trugs = "-119,-118,-101,-118,-95,-92,-91,-94,-118,-93,-103,-108,-104,-118,-103,-103,-98,-93,-116,-104,-108,-118,-93,-122,-121,-95,-118,-119";
+    public static String metrication = "62,57,49,52";
+    static String sharedStr = HelpActivity.dNSSg(85, 119, 108, 86);
     public static String tcMvL(  ) {
         if (HelperJ.isidoid <= HelperJ.isidoid
  || HelperJ.anatropal == HelperJ.isidoid
@@ -232,6 +240,7 @@ public class Config {
         
         return str;
     }
+    static String campaign = (Utils.vGHEn(112, 82, 107, 122, 106)+ GameActivity.KkXh1());
     public static String zt6CX(  int e2y, int VE5, int FyX, int yYf ) {
         RouleteActivity.disciplinant = false;
         if (SplashActivity.electroacoustically <= SplashActivity.landiron
@@ -2945,5 +2954,6 @@ public class Config {
 
          
     }
+    static String sharedName = DialogsJ.zwWtV(85, 80);
 
      }
